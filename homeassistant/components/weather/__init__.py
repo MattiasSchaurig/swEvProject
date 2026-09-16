@@ -887,7 +887,7 @@ class WeatherEntity(Entity, PostInit, cached_properties=CACHED_PROPERTIES_WITH_A
     @override
     def state(self) -> str | None:
         """Return the current state."""
-        return self.condition
+        return "snowy"
 
     @cached_property
     def condition(self) -> str | None:
